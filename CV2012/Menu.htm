@@ -1,0 +1,889 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+
+  
+  <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+
+  
+  <meta name="ProgId" content="FrontPage.Editor.Document">
+  <title>Curriculum Vitae 2012 - Menu; Developed by Matjaž Samarin,
+Apr. 2012. All rights reserved.</title>
+  <link rel="stylesheet" href="css/SlideDownMenu.css">
+  <link rel="stylesheet" href="css/Menu.css">
+  <link rel="stylesheet" href="css/Window.css">
+  <script type="text/javascript" src="js/slidedown-menu.js"></script>
+  <script type="text/javascript" src="js/window.js"></script>
+  <script type="text/javascript"> 
+var Lang = "SL";
+var AcivePage = "Main";
+var PageValidateIntervalID = null;
+var expandFirstItemAutomatically=1;
+//var initMenuIdToExpand = "Main"; 
+
+function SelectLanuage( LangSelect )
+{
+	Lang=LangSelect
+	if (Lang=="EN")
+		{
+		document.getElementById('LangFlag').src='Menu_files/USA.gif';
+		document.getElementById('WelcomeImg').src='Menu_files/hello.gif';
+
+		document.getElementById('CV').firstChild.data ='Curriculum Vitae';
+			document.getElementById('Main').firstChild.data ='Personal Information';
+			document.getElementById('Zivljenjepis').firstChild.data ='CV';
+			document.getElementById('Usposobljenost').firstChild.data ='Skills and knowledge';
+			document.getElementById('Aktivnosti').firstChild.data ='Activities';
+			document.getElementById('Bibliografija').firstChild.data ='Bibliography';
+			document.getElementById('Priporocila').firstChild.data ='Recommendations';
+				document.getElementById('Priporocila-Julon').firstChild.data ='Julon d.d. - Aquafil';
+			document.getElementById('Prenesi').firstChild.data ='-> Download';
+				document.getElementById('EuropassCV').firstChild.data ='Europass CV - ENG';
+      	           	   	document.getElementById('EuropassCV').href="/Download/Europass CV - ENG.pdf";  
+		document.getElementById('Dela').firstChild.data ='Review of Work';
+			document.getElementById('Strojnistvo').firstChild.data ='Mechanical Engineering';
+				document.getElementById('RazvojniProjekti').firstChild.data = 'R&D Projects';
+				document.getElementById('AplikativniProjekti').firstChild.data = 'Applied and Investment Projects';
+			document.getElementById('Racunalnistvo').firstChild.data ='Computer Engineering';
+				document.getElementById('Imaq').firstChild.data ='Computer Vision';
+				document.getElementById('Daq').firstChild.data ='Data Acquisition';
+				document.getElementById('Nadzor').firstChild.data ='Machine Supervision';
+				document.getElementById('SCADA').firstChild.data ='SCADA';
+				document.getElementById('HTML').firstChild.data ='HTML';
+				document.getElementById('Baze').firstChild.data ='Data Bases';
+				document.getElementById('ProgamiRazno').firstChild.data ='Other';
+		document.getElementById('Dokazila').firstChild.data ='Journal of Evidence';
+			document.getElementById('Diploma').firstChild.data = 'Degree - B.Sc. Mech. Eng.';
+			document.getElementById('Magisterij').firstChild.data ='Degree - M.Sc.  Mech. Eng.';
+			document.getElementById('DokazilaRazno').firstChild.data ='Miscellaneous';
+				document.getElementById('Izvolitev').firstChild.data = 'Election - Research Assistant';
+				document.getElementById('Potrdilo').firstChild.data ='Certificate of Success';
+				document.getElementById('NotranjaPresoja').firstChild.data ='Seminar - Inter. assessment';
+				document.getElementById('Phare').firstChild.data ='Seminar - Phare PRAQ III';
+				document.getElementById('TreningUcinkovitosti').firstChild.data ='Workshop - Improve efficiency';
+		document.getElementById('FotoGalerija').firstChild.data ='Photo Gallery';
+		
+		document.getElementById("SelectBySpan").innerHTML="Select by:";
+		document.getElementById("SelectByRelevanceSpan").innerHTML="Relevance:";
+		document.getElementById("SelectByRelevance").options[0].text="All";
+		document.getElementById("SelectByRelevance").options[1].text="Less";
+		document.getElementById("SelectByRelevance").options[2].text="Medium";
+		document.getElementById("SelectByRelevance").options[3].text="Most";
+		document.getElementById("SelectByYearSpan").innerHTML="Year:";
+		document.getElementById("SelectByYear").options[0].text="All";
+		document.getElementById("SelectByCompanySpan").innerHTML="Company:";
+		document.getElementById("SelectByCompany").options[0].text="All";
+
+		}
+	else
+		{
+		document.getElementById('LangFlag').src='Menu_files/SLO.gif';
+		document.getElementById('WelcomeImg').src='Menu_files/pozdrav.gif';
+
+		document.getElementById('CV').firstChild.data ='Curriculum Vitae';
+			document.getElementById('Main').firstChild.data ='Osebni podatki';
+			document.getElementById('Zivljenjepis').firstChild.data ='Življenjepis';
+			document.getElementById('Usposobljenost').firstChild.data ='Usposobljenost';
+			document.getElementById('Aktivnosti').firstChild.data ='Aktivnosti';
+			document.getElementById('Bibliografija').firstChild.data ='Bibliografija';
+			document.getElementById('Priporocila').firstChild.data ='Priporočila';
+				document.getElementById('Priporocila-Julon').firstChild.data ='Julon d.d. - Aquafil';
+			document.getElementById('Prenesi').firstChild.data ='-> Prenesi';
+				document.getElementById('EuropassCV').firstChild.data ='Europass CV - SLO';
+                    		document.getElementById('EuropassCV').href="/Download/Europass CV - SLO.pdf";  
+		document.getElementById('Dela').firstChild.data ='Pregled del';
+			document.getElementById('Strojnistvo').firstChild.data ='Strojništvo';
+				document.getElementById('RazvojniProjekti').firstChild.data ='Razvojni in raziskovalni projekti';
+				document.getElementById('AplikativniProjekti').firstChild.data ='Aplikativni in investicijski projekti';
+			document.getElementById('Racunalnistvo').firstChild.data ='Računalništvo';
+				document.getElementById('Imaq').firstChild.data ='Zajem slike';
+				document.getElementById('Daq').firstChild.data ='Zajem podatkov';
+				document.getElementById('Nadzor').firstChild.data ='Nadzor naprav';
+				document.getElementById('SCADA').firstChild.data ='SCADA';
+				document.getElementById('HTML').firstChild.data ='HTML';
+				document.getElementById('Baze').firstChild.data ='Baze podatkov';
+				document.getElementById('ProgamiRazno').firstChild.data ='Razno';
+		document.getElementById('Dokazila').firstChild.data ='Dokazila';
+			document.getElementById('Diploma').firstChild.data ='Diploma - uni. dipl. inž.';
+			document.getElementById('Magisterij').firstChild.data ='Diploma - magister';
+			document.getElementById('DokazilaRazno').firstChild.data ='Razno';
+				document.getElementById('Izvolitev').firstChild.data ='Izvolitev - asistent';
+				document.getElementById('Potrdilo').firstChild.data ='Potrdilo o uspehu';
+				document.getElementById('NotranjaPresoja').firstChild.data ='Seminar - Notranja presoja';
+				document.getElementById('Phare').firstChild.data ='Seminar - Phare PRAQ III';
+				document.getElementById('TreningUcinkovitosti').firstChild.data ='Delavnica - Večja učinkovitost';
+		document.getElementById('FotoGalerija').firstChild.data ='Foto galerija';
+
+
+		document.getElementById("SelectBySpan").innerHTML="Izberi:";
+		document.getElementById("SelectByRelevanceSpan").innerHTML="Pomembno:";
+		document.getElementById("SelectByRelevance").options[0].text="Vse";
+		document.getElementById("SelectByRelevance").options[1].text="Manj";
+		document.getElementById("SelectByRelevance").options[2].text="Serdnje";
+		document.getElementById("SelectByRelevance").options[3].text="Bolj";
+		document.getElementById("SelectByYearSpan").innerHTML="Leto:";
+		document.getElementById("SelectByYear").options[0].text="Vse";
+		document.getElementById("SelectByCompanySpan").innerHTML="Podjetje:";
+		document.getElementById("SelectByCompany").options[0].text="Vse";
+		}
+
+		SelectPage(AcivePage);
+		return true;
+}
+
+
+function SelectPage( PageSelect )
+{
+var SetPage;
+
+	AcivePage=PageSelect;
+
+	if (Lang=="EN")
+		SetPage=PageSelect + "_EN"; 	
+	else
+		SetPage=PageSelect;
+ 	
+	SetPage=SetPage + ".htm";
+	parent.frames['MainFrame'].location = SetPage;
+//	parent.frames['MainFrame'].location.reload(true);
+	// to avoid multiple registration
+	if (PageValidateIntervalID===null) PageValidateIntervalID = setInterval("validateFrameMain()",50);
+
+	return true;
+	
+}
+
+function sortSelectionList(selElem) 
+{
+// sort all but first element
+var tmpAry = new Array(); 
+var tmpAry1 = new Array(); 
+var NoItems = selElem.options.length;
+
+	tmpAry[0] = new Array(); 
+        tmpAry[0][0] = selElem.options[0].text; 
+        tmpAry[0][1] = selElem.options[0].value; 
+
+        for (var i=0;i < NoItems-1;i++) { 
+            tmpAry1[i] = new Array(); 
+            tmpAry1[i][0] = selElem.options[i+1].text; 
+            tmpAry1[i][1] = selElem.options[i+1].value;
+        } 
+
+        tmpAry1.sort();
+		tmpAry1.reverse(); 
+        while (selElem.options.length > 0) { 
+            selElem.options[0] = null; 
+        } 
+
+        for (var i=0;i < NoItems-1;i++) { 
+            tmpAry[i+1] = new Array(); 
+            tmpAry[i+1][0] = tmpAry1[i][0]; 
+            tmpAry[i+1][1] = tmpAry1[i][1];
+        } 
+
+        for (var i=0;i<tmpAry.length;i++) { 
+            var op = new Option(tmpAry[i][0], tmpAry[i][1]); 
+            selElem.options[i] = op; 
+        } 
+        return; 
+    } 
+
+
+function SetSelectionList()
+{
+var innerDoc; 
+var divs; 
+//divs now contain each and every div element on the page 
+var TableStr; 
+var TableStrFields=new Array();
+var hideRelevanceList=0;
+var hideYearList=0;
+var hideCompanyList=0;
+var i,j;
+var setOption=0;
+var YearListRef=document.getElementById('SelectByYear');
+var CompanyListRef=document.getElementById('SelectByCompany');
+var option;
+
+
+	innerDoc = parent.frames['MainFrame'].document;
+	
+	
+	for(i=YearListRef.options.length-1;i>=1;i--)
+		{
+		// remove all options from list (all but first)
+		YearListRef.remove(i);
+		}
+
+
+	for(i=CompanyListRef.options.length-1;i>=1;i--)
+		{
+		// remove all options from list (all but first)
+		CompanyListRef.remove(i);
+		}
+
+ 	divs = innerDoc.getElementsByTagName("div"); 
+ 
+	for(var i = 0; i < divs.length;i++) 
+		{ 
+		TableStr=divs[i].id;
+//		if (TableStr!="")
+			{
+			TableStrFields = TableStr.split("_");
+		
+			if (TableStrFields[0].toLowerCase().search("table")==0)
+				{
+				hideRelevanceList=0;
+				hideYearList=0;
+				hideCompanyList=0;
+				}
+			else if (TableStrFields[0].toLowerCase().search("listitem")==0)
+				{
+				hideRelevanceList=0;
+				hideYearList=0;
+				hideCompanyList=0;
+				}
+			else if (TableStrFields[0].toLowerCase().search("ident")==0)
+				{
+				hideRelevanceList=0;
+				hideYearList=1;
+				hideCompanyList=1;
+				}
+			else
+				{
+				hideRelevanceList=1;
+				hideYearList=1;
+				hideCompanyList=1;
+				}
+
+			if (TableStrFields[2]!="" &&  (TableStrFields[0].toLowerCase().search("table")==0 || TableStrFields[0].toLowerCase().search("listitem")==0))
+				{
+				setOption=1;
+				for(j=0;j<=YearListRef.options.length-1;j++)
+					{
+					// add options to list
+					if (YearListRef.options[j].text==TableStrFields[2]) 
+						{
+						setOption=0;
+						break;
+						}
+					}
+
+				if (setOption==1)
+					{
+					option=document.createElement("option");
+					option.text=TableStrFields[2];
+					option.value=YearListRef.options.length;
+ 	
+					try
+   						{
+   						// for IE earlier than version 8
+   						YearListRef.add(option,x.options[null]);
+   						}
+ 					catch (e)
+   						{
+   						YearListRef.add(option,null);
+	   					}
+					}
+				sortSelectionList(YearListRef);
+				}
+
+			if (TableStrFields[3]!="" &&  (TableStrFields[0].toLowerCase().search("table")==0 || TableStrFields[0].toLowerCase().search("listitem")==0))
+				{
+				setOption=1;
+				for(j=0;j<=CompanyListRef.options.length-1;j++)
+					{
+					// add options to list
+					if (CompanyListRef.options[j].text==TableStrFields[3]) 
+						{
+						setOption=0;
+						break;
+						}
+					}
+
+				if (setOption==1)
+					{
+					option=document.createElement("option");
+					option.text=TableStrFields[3];
+					option.value=CompanyListRef.options.length;
+ 	
+					try
+   						{
+   						// for IE earlier than version 8
+   						CompanyListRef.add(option,x.options[null]);
+   						}
+ 					catch (e)
+   						{
+   						CompanyListRef.add(option,null);
+	   					}
+					}
+				sortSelectionList(CompanyListRef);
+				}
+			}
+		}
+
+
+	if (hideRelevanceList==1)
+		//document.getElementById('RelevanceListDiv').style.visibility = 'hidden';
+		document.getElementById('RelevanceListDiv').style.display = "none"; 
+	else
+		//document.getElementById('RelevanceListDiv').style.visibility = 'visible';
+		document.getElementById('RelevanceListDiv').style.display = "block"; 
+
+	if (hideYearList==1)
+		//document.getElementById('YearListDiv').style.visibility = 'hidden';
+		document.getElementById('YearListDiv').style.display = "none"; 
+	else
+		//document.getElementById('YearListDiv').style.visibility = 'visible';
+		document.getElementById('YearListDiv').style.display = "block"; 
+
+	if (hideCompanyList==1)
+		//document.getElementById('CompanyListDiv').style.visibility = 'hidden';
+		document.getElementById('CompanyListDiv').style.display = "none"; 
+	else
+		//document.getElementById('CompanyListDiv').style.visibility = 'visible';
+		document.getElementById('CompanyListDiv').style.display = "block"; 
+	
+
+	if (hideRelevanceList==1 || hideYearList==1 || hideCompanyList==1)
+		//document.getElementById('SelectByDiv').style.visibility = 'hidden';
+//		document.getElementById('SelectByDiv').style.display = "none"; 
+		hideWindow();
+	else
+		//document.getElementById('SelectByDiv').style.visibility = 'visible';
+//		document.getElementById('SelectByDiv').style.display = "block"; 
+		displayWindow();
+	return true;
+	
+}
+
+//look if the frame page is complete load 
+function validateFrameMain() 
+{ 
+  	if (parent.frames['MainFrame'].document.readyState == "complete") 
+  		{ 
+		SetSelectionList();
+    		clearInterval(PageValidateIntervalID); 
+    		PageValidateIntervalID = null;
+  		} 
+}
+
+function hideMainFrameDiv( DivID ) 
+{ 
+var innerDoc = parent.frames['MainFrame'].document; 
+
+	if (innerDoc.getElementById) 
+		{ // DOM3 = IE5, NS6 
+		//innerDoc.getElementById(DivID).style.visibility = 'hidden'; 
+		innerDoc.getElementById(DivID).style.display = "none"; 
+		} 
+	else 
+		{ 
+		if (innerDoc.layers) 
+			{ // Netscape 4 
+			//innerDoc.hideShow.visibility = 'hidden';
+			innerDoc.getElementById(DivID).style.display = "none"; 
+			} 
+		else 
+			{ // IE 4 
+			//innerDoc.all.hideShow.style.visibility = 'hidden'; 
+			innerDoc.getElementById(DivID).style.display = "none"; 
+			} 
+		} 
+} 
+
+function showMainFrameDiv( DivID ) 
+{ 
+var innerDoc = parent.frames['MainFrame'].document; 
+	
+	if (innerDoc.getElementById) 
+		{ // DOM3 = IE5, NS6 
+		//innerDoc.getElementById(DivID).style.visibility = 'visible'; 
+		innerDoc.getElementById(DivID).style.display = "block"; 
+		} 
+	else 
+		{ 
+		if (innerDoc.layers) 
+			{ // Netscape 4 
+			//innerDoc.hideShow.visibility = 'visible'; 
+			innerDoc.getElementById(DivID).style.display = "block"; 
+			} 
+		else 
+			{ // IE 4 
+			//innerDoc.all.hideShow.style.visibility = 'visible'; 
+			innerDoc.getElementById(DivID).style.display = "block"; 
+			} 
+		} 
+} 
+
+
+
+function ShowHideTopicByRank()
+{
+var innerDoc = parent.frames['MainFrame'].document; 
+var divs = innerDoc.getElementsByTagName("div"); 
+//divs now contain each and every div element on the page 
+var cIndex = document.getElementById("SelectByRelevance").selectedIndex;
+var TableStr; 
+var TableStrFields=new Array();
+
+	if (cIndex > -1) 
+	{
+	var option = document.getElementById("SelectByRelevance").options[cIndex];
+//	alert(option.text);
+
+	for(var i = 0; i < divs.length;i++) 
+		{ 
+		TableStr=divs[i].id;
+		TableStrFields = TableStr.split("_");
+		if (TableStr!="")
+			{
+			if (cIndex==0) 
+				showMainFrameDiv(divs[i].id);	//show all DIV's
+			else 
+				{
+				if (TableStrFields[0].toLowerCase().search("table")==0 || TableStrFields[0].toLowerCase().search("listitem")==0)
+					{
+					if (TableStrFields[1] == option.value)
+						{ 
+						showMainFrameDiv(divs[i].id);	//show DIV
+						if (TableStrFields[0].toLowerCase().search("listitem")==0)
+							{
+							showMainFrameDiv("Topic" + TableStrFields[0].substring(("listitem").length,TableStrFields[0].indexOf(".")));
+							}
+						}
+					else
+						hideMainFrameDiv(divs[i].id);	//hide DIV
+					}
+				if (TableStrFields[0].toLowerCase().search("topic")==0)
+					{
+						hideMainFrameDiv(divs[i].id);	//hide Topic DIV
+					}
+
+				}
+			} 
+		}
+	}
+
+}
+
+
+function ShowHideTopicByYear()
+{
+var innerDoc = parent.frames['MainFrame'].document; 
+var divs = innerDoc.getElementsByTagName("div"); 
+//divs now contain each and every div element on the page 
+var cIndex = document.getElementById("SelectByYear").selectedIndex;
+var TableStr; 
+var TableStrFields=new Array();
+
+	if (cIndex > -1) 
+	{
+	var option = document.getElementById("SelectByYear").options[cIndex];
+//	alert(option.text);
+
+	for(var i = 0; i < divs.length;i++) 
+		{ 
+		TableStr=divs[i].id;
+		TableStrFields = TableStr.split("_");
+		if (TableStr!="")
+			{
+			if (cIndex==0) 
+				showMainFrameDiv(divs[i].id);	//show all DIV's
+			else 
+				{
+				if (TableStrFields[0].toLowerCase().search("table")==0 || TableStrFields[0].toLowerCase().search("listitem")==0)
+					{
+					if (TableStrFields[2] == option.text)
+						{ 
+						showMainFrameDiv(divs[i].id);	//show DIV
+						if (TableStrFields[0].toLowerCase().search("listitem")==0)
+							{
+							showMainFrameDiv("Topic" + TableStrFields[0].substring(("listitem").length,TableStrFields[0].indexOf(".")));
+							}
+						}
+					else
+						hideMainFrameDiv(divs[i].id);	//hide DIV
+					}
+				if (TableStrFields[0].toLowerCase().search("topic")==0)
+					{
+						hideMainFrameDiv(divs[i].id);	//hide Topic DIV
+					}
+				}
+			} 
+		}
+	}
+
+}
+
+
+function ShowHideTopicByCompany()
+{
+var innerDoc = parent.frames['MainFrame'].document; 
+var divs = innerDoc.getElementsByTagName("div"); 
+//divs now contain each and every div element on the page 
+var cIndex = document.getElementById("SelectByCompany").selectedIndex;
+var TableStr; 
+var TableStrFields=new Array();
+
+	if (cIndex > -1) 
+	{
+	var option = document.getElementById("SelectByCompany").options[cIndex];
+//	alert(option.text);
+
+	for(var i = 0; i < divs.length;i++) 
+		{ 
+		TableStr=divs[i].id;
+		TableStrFields = TableStr.split("_");
+		if (TableStr!="")
+			{
+			if (cIndex==0) 
+				showMainFrameDiv(divs[i].id);	//show all DIV's
+			else 
+				{
+				if (TableStrFields[0].toLowerCase().search("table")==0 || TableStrFields[0].toLowerCase().search("listitem")==0)
+					{
+					if (TableStrFields[3] == option.text) 
+						{
+						showMainFrameDiv(divs[i].id);	//show DIV
+						if (TableStrFields[0].toLowerCase().search("listitem")==0)
+							{
+							showMainFrameDiv("Topic" + TableStrFields[0].substring(("listitem").length,TableStrFields[0].indexOf(".")));
+							}
+						}
+					else
+						hideMainFrameDiv(divs[i].id);	//hide DIV
+					}
+				if (TableStrFields[0].toLowerCase().search("topic")==0)
+					{
+						hideMainFrameDiv(divs[i].id);	//hide Topic DIV
+					}
+
+				}
+			} 
+		}
+	}
+
+}
+
+
+//Status Bar Message:
+function showMsg( step )
+{
+	var msg = "";
+	var welcomemsg="";
+
+    	if( typeof showMsg.counter == 'undefined' ) 
+	{
+        	showMsg.counter = 0;
+    	}
+		
+	if (Lang=="EN")
+		welcomemsg="Matjaž Samarin - eBook of Revelation - WELCOME! ";	
+	else
+		welcomemsg="Matjaž Samarin - eKnjiga razodetja - DOBRODOŠLI! ";
+
+
+	for( var i=500; i ; i-- ) msg = msg+" ";
+	msg = msg + welcomemsg;
+	msg = msg.substring( step, msg.length );
+	if (showMsg.counter==0)
+		{
+		showMsg.tickmsg = "      .";
+		}
+	else if (showMsg.counter==1)
+		{
+		showMsg.tickmsg = "     . ";
+		}
+	else if (showMsg.counter==2)
+		{
+		showMsg.tickmsg = "    .  ";
+		}
+	else if (showMsg.counter==3)
+		{
+		showMsg.tickmsg = "   .   ";
+		}
+	else if (showMsg.counter==4) 
+		{
+		showMsg.tickmsg = "  .    ";
+		}
+	else if (showMsg.counter==6) 
+		{
+		showMsg.tickmsg = " .     ";
+		}
+	else if (showMsg.counter==7)
+		{
+		showMsg.tickmsg = ".      ";
+		}
+	else if (showMsg.counter==8) 
+		{
+		showMsg.tickmsg = " .     ";
+		}
+	else if (showMsg.counter==9) 
+		{
+		showMsg.tickmsg = "  .    ";
+		}
+	else if (showMsg.counter==10)
+		{
+		showMsg.tickmsg = "   .   ";
+		}
+	else if (showMsg.counter==11)
+		{
+		tickmsg = "    .  ";
+		}
+	else if (showMsg.counter==12)
+		{
+		showMsg.tickmsg = "     . ";
+		}
+	
+	if (showMsg.counter==12)
+		showMsg.counter=0;
+	else
+		showMsg.counter++;
+
+//	window.status = ((step % 2) ? ": " : " :")+msg;
+	window.status = showMsg.tickmsg+msg;
+
+	if( msg.length <= 0)
+	{
+		window.status = "";
+		return true;
+	}
+	window.setTimeout("showMsg("+(step+1)+")",((step == 0) ? 1500:100));
+	return true;
+}
+showMsg(0);
+  </script>
+  
+<style type="text/css">#counter_177693 {font-family: "Verdana"; font-size: 11px; clear: left; color: #BBBBBB;}  #counter_177693 a {color: #BBBBBB;}#counter_div_177693 {height: 20px}</style>
+</head>
+
+<body onload="SelectLanuage('SL');" onmouseup="deselectAll();" onmousemove="mouseMoved(event.pageX,event.pageY,event.clientX,event.clientY);" 
+onmousedown="checkSelection();" style="color: rgb(153, 153, 153); background-color: rgb(0, 0, 0);" lang="SL">
+<div id="Language" style="position: relative; left: 9px; top: 0px; width: 95%; height: 20px; z-index: 1;">
+<table style="width: 100%;">
+  <tbody>
+    <tr>
+      <td style="text-align: left;"> <a href="#" onclick="SelectLanuage('SL'); return false;">SL</a> <a href="#" onclick="SelectLanuage('EN'); return false;">EN</a> </td>
+      <td style="text-align: right;"> <img id="LangFlag" src="Menu_files/SLO.gif"> </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div id="mainContainer" style="position: relative; left: 0px; top: 10px; right: 5px; height: 40%; z-index: 2;">
+<div id="leftMenu"><!-- START OF MENU -->
+<div id="dhtmlgoodies_slidedown_menu">
+<ul>
+  <li><a href="#" id="CV">Curriculum Vitae</a>
+    <ul>
+      <li><a href="#" id="Main" onmouseup="SelectPage('Main');return false;">Osebni podatki</a></li>
+      <li><a href="#" id="Zivljenjepis" onmouseup="SelectPage('Zivljenjepis');return false;">Življenjepis</a></li>
+      <li><a href="#" id="Usposobljenost" onmouseup="SelectPage('Usposobljenost');return false;">Usposobljenost</a></li>
+      <li><a href="#" id="Aktivnosti" onmouseup="SelectPage('Aktivnosti');return false;">Aktivnosti</a></li>
+      <li><a href="#" id="Bibliografija" onmouseup="SelectPage('Bibliografija');return false;">Aktivnosti</a></li>
+
+      <li><a href="#" id="Priporocila">Priporočila</a>
+			
+		<ul>      
+			
+		<li><a href="#" id="Priporocila-Julon" onmouseup="SelectPage('Priporocila-Julon');return false;">Julon d.d. - Aquafil</a></li>
+		</ul>
+	
+      </li>
+      <li><a href="#" id="Prenesi">-> Prenesi</a>
+			
+		<ul>      
+			
+		<li><a href="/Download/Europass CV - SLO.pdf" target="_blank" id="EuropassCV" >Europass CV - SLO</a></li>
+		</ul>
+	
+      </li>
+
+   </ul>
+ 
+  </li>
+
+  <li><a href="#" id="Dela">Pregled del</a>
+    <ul>
+      <li><a href="#" id="Strojnistvo">Strojništvo</a>
+        <ul>
+          <li><a href="#" id="RazvojniProjekti" onmouseup="SelectPage('Projekti-Razvojni');return false;">Razvojni in
+raziskovalni projekti</a></li>
+          <li><a href="#" id="AplikativniProjekti" onmouseup="SelectPage('Projekti-Aplikativni');return false;">Aplikativni
+in investicijski projekti</a></li>
+        </ul>
+      </li>
+      <li><a href="#" id="Racunalnistvo">Računalništvo</a>
+        <ul>
+          <li><a href="#" id="Imaq" onmouseup="SelectPage('Programi-IMAQ');return false;">Zajem slike</a></li>
+          <li><a href="#" id="Daq" onmouseup="SelectPage('Programi-DAQ');return false;">Zajem podatkov</a></li>
+          <li><a href="#" id="Nadzor" onmouseup="SelectPage('Programi-nadzor');return false;">Nadzor naprav</a></li>
+          <li><a href="#" id="Baze" onmouseup="SelectPage('Baze');return false;">Baze podatkov</a></li>
+          <li><a href="#" id="SCADA" onmouseup="SelectPage('Programi-SCADA');return false;">SCADA sistemi</a></li>
+          <li><a href="#" id="HTML" onmouseup="SelectPage('Programi-HTML');return false;">HTML</a></li>
+          <li><a href="#" id="ProgamiRazno" onmouseup="SelectPage('Programi-razno');return false;">Razno</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#" id="Dokazila">Dokazila</a>
+    <ul>
+		<li><a href="#" id="Diploma" onmouseup="SelectPage('Diploma');return false;">Diploma - uni. dipl.
+inž.</a></li>
+		<li><a href="#" id="Magisterij" onmouseup="SelectPage('Magisterij');return false;">Diploma - magister</a></li>
+		<li><a href="#" id="DokazilaRazno">Razno</a>
+			<ul>      
+			<li><a href="#" id="Izvolitev" onmouseup="SelectPage('Izvolitev');return false;">Izvolitev - asistent</a></li>
+			<li><a href="#" id="Potrdilo" onmouseup="SelectPage('Potrdilo');return false;">Potrdilo o uspehu</a></li>
+			<li><a href="#" id="NotranjaPresoja" onmouseup="SelectPage('Notranja_presoja');return false">Seminar -
+Notranja presoja</a></li>
+			<li><a href="#" id="Phare" onmouseup="SelectPage('Phare');return false;">Seminar - Phare PRAQ III</a></li>
+			<li><a href="#" id="TreningUcinkovitosti" onmouseup="SelectPage('Trening_ucinkovitosti');return false;">Delavnica - Večja učinkovitost</a></li>
+			</ul>
+		</li>
+	</ul>
+  </li>
+
+  <li><a href="ImageGallery.htm" id="FotoGalerija" target="MainFrame">Foto
+galerija</a></li>
+</ul>
+</div>
+<!-- END OF MENU -->
+<script type="text/javascript">
+		initSlideDownMenu();
+		</script> </div>
+</div>
+
+<DIV id="internalWindow" style="z-index: 5;">
+ <TABLE cellSpacing="0">
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing="0">
+        <TBODY>
+        <TR>
+          <TD id="title" onmousedown="beginMove();"></TD>
+          <TD id="top" onmousedown="beginMove();"></TD>
+          <TD id="close" onmouseup="mouseUpClose();" onmouseover="mouseOverClose();" onmouseout="mouseOutClose();" onmousedown="mouseDownClose();"></TD>
+		</TR>
+		</TBODY>
+	  </TABLE>
+	</TD>
+  </TR>
+  <TR>
+    <TD>
+      <TABLE cellSpacing="0">
+        <TBODY>
+        <TR>
+          <TD id="left"></TD>
+          <TD>
+            <DIV id="windowPane" style="z-index: 6;">
+				<div id="SelectByDiv" style="position: relative; left: 9px; top: 0px; z-index: 7;">
+					<p class="TextParagraph"><b><span class="SelectListSpan" id="SelectBySpan">Select by:</span></b></p>
+				</div>
+				<div id="RelevanceListDiv" style="position: relative; left: 9px; top: 0px; width: 100%; z-index: 8;">
+					<table class="SelectTable" width="90%">
+					  <tbody>
+						<tr>
+						  <td class="SelectCell" width="40%">
+						  <p class="TextParagraph"><i><span class="SelectListSpan" id="SelectByRelevanceSpan">Relevance:</span></i></p>
+						  </td>
+						  <td class="SelectCell">
+						  <select class="SelectList" name="SelectByRelevance" id="SelectByRelevance" onchange="ShowHideTopicByRank();">
+						  <option value="0">All</option>
+						  <option value="1">Less</option>
+						  <option value="2">Medium</option>
+						  <option value="3">Most</option>
+						  </select>
+						  </td>
+						</tr>
+					  </tbody>
+					</table>
+				</div>
+				<div id="YearListDiv" style="position: relative; left: 9px; top: 0px; width: 100%; z-index: 9;">
+					<table class="SelectTable" width="90%">
+					  <tbody>
+						<tr>
+						  <td class="SelectCell" width="40%">
+						  <p class="TextParagraph"><i><span class="SelectListSpan" id="SelectByYearSpan">Year:</span></i></p>
+						  </td>
+						  <td class="SelectCell">
+						  <select class="SelectList" name="SelectByYear" id="SelectByYear" onchange="ShowHideTopicByYear();">
+						  <option value="0">All</option>
+						  </select>
+						  </td>
+						</tr>
+					  </tbody>
+					</table>
+					</div>
+				<div id="CompanyListDiv" style="position: relative; left: 9px; top: 0px; width: 100%; z-index: 10;">
+					<table class="SelectTable" width="90%">
+					  <tbody>
+						<tr>
+						  <td class="SelectCell" width="40%">
+						  <p class="TextParagraph"><i><span class="SelectListSpan" id="SelectByCompanySpan">Company:</span></i></p>
+						  </td>
+						  <td class="SelectCell">
+						  <select class="SelectList" name="SelectByCompany" id="SelectByCompany" onchange="ShowHideTopicByCompany();">
+						  <option value="0">All</option>
+						  </select>
+						  </td>
+						</tr>
+					  </tbody>
+					</table>
+				</div>
+				<DIV></DIV>
+			</DIV>
+		  </TD>
+          <TD id="right"></TD>
+		</TR>
+		</TBODY>
+	  </TABLE>
+	</TD>
+  </TR>
+  <TR>
+    <TD>
+      <TABLE cellSpacing="0">
+        <TBODY>
+        <TR>
+          <TD id="bottomLeft"></TD>
+          <TD id="bottom"></TD>
+          <TD id="resize" onmousedown="beginResize();">
+		  </TD>
+		 </TR>
+		</TBODY>
+	  </TABLE>
+	</TD>
+  </TR>
+  </TBODY>
+ </TABLE>
+</DIV>
+
+<div id="WelcomeNote" style="position: absolute; left: 5px; bottom: 10px; right: 5px; height: 50px; z-index: 3;">
+<img id="WelcomeImg" src="Menu_files/pozdrav.gif" border="0"> </div>
+
+<table border="0">
+
+  <tbody>
+    <tr>
+      <td>
+      <div style="position: absolute; left: 5px; right: 5px; bottom: 0px; z-index: 4;">
+<!-- Start counter code --> <img alt="Website counter" src="http://forever-counters.com/5661630-226BDF28885C7FB51B6CA92FE9A5BBBB/counter.img?theme=8&amp;digits=6&amp;siteId=7" border="0" hspace="0" vspace="0">
+      <noscript><br>
+Free Counter<br>
+The following text will not be seen after you upload your website,
+please keep it in order to retain your counter functionality <br>
+      </noscript> <!-- End counter code -->
+<!-- START OF HIT COUNTER CODE >
+<br><script language="JavaScript" src="http://www.counter160.com/js.js?img=11"></script><br><a href="http://www.000webhost.com"><img src="http://www.counter160.com/images/11/left.png" alt="Free web hosting" border="0" align="texttop"></a><a href="http://www.hosting24.com"><img alt="Web hosting" src="http://www.counter160.com/images/11/right.png" border="0" align="texttop"></a>
+< END OF HIT COUNTER CODE -->
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>
