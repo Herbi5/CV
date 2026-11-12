@@ -1,0 +1,137 @@
+	/*
+	General rules
+	*/
+
+	html{
+	height:100%;
+	right:0 px;
+	scrollbar-face-color: #000000; 
+	scrollbar-track-color: #111111; 
+	scrollbar-arrow-color: #ffffff; 
+	scrollbar-highlight-color: #444444; 
+	scrollbar-shadow-color: #333333; 
+	scrollbar-3dlight-color: #333333; 
+	scrollbar-darkshadow-color: #666666; 
+	}
+
+	body{
+		font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+		font-size:0.8em;
+		margin:0px;
+		padding:0px;
+		background-color:#000000;
+		height:100%;
+		width:100%;
+		text-align:center;
+	}
+
+
+	.clear{
+		clear:both;
+	}
+	
+	::selection {
+	background: transparent; /* Safari */
+	}
+	
+	::-moz-selection {
+	background: transparent; /* Firefox */
+	} 
+
+    td{
+      padding:0;
+    }
+
+    #internalWindow{
+      display:none;
+      background:url('../Window_files/transparent.gif');
+      padding:0px;
+      position:absolute;
+      left:12px;
+//      top:0px;
+      bottom:65px;
+	  opacity:0.7;
+	  filter:alpha(opacity=70); /* For IE8 and earlier */
+	  }
+
+    #title{
+      background:url('../Window_files/title.png');
+      width:72px;
+      height:26px;
+	  opacity:0.3;
+	  filter:alpha(opacity=30); /* For IE8 and earlier */
+    }
+
+    #top{
+      background:url('../Window_files/top.png') repeat-x;
+      width:116px;
+      height:26px;
+	  opacity:0.3;
+	  filter:alpha(opacity=30); /* For IE8 and earlier */
+    }
+
+    #close{
+      background:url('../Window_files/close.png');
+      width:24px;
+      height:26px;
+	  opacity:0.3;
+	  filter:alpha(opacity=30); /* For IE8 and earlier */
+    }
+
+    #left{
+      background:url('../Window_files/left.png') repeat-y;
+      width:6px;
+      height:106px;
+	  opacity:0.3;
+	  filter:alpha(opacity=30); /* For IE8 and earlier */
+    }
+
+    #windowPane{
+      background-color:transparent;
+      position:relative;
+      width:200px;
+      height:106px;
+ //     overflow:scroll;
+	  opacity:0.8;
+	  filter:alpha(opacity=80); /* For IE8 and earlier */
+    }
+
+    #windowPane div{
+      background:url('../Window_files/background.png');
+      width:180px;
+	  opacity:0.8;
+	  filter:alpha(opacity=80); /* For IE8 and earlier */
+    }
+
+    #right{
+      background:url('../Window_files/right.png') repeat-y;
+      width:6px;
+      height:106px;
+	  opacity:0.3;
+	  filter:alpha(opacity=30); /* For IE8 and earlier */
+    }
+
+    #bottomLeft{
+      background:url('../Window_files/bottomleft.png');
+      width:4px;
+      height:12px;
+	  opacity:0.3;
+	  filter:alpha(opacity=30); /* For IE8 and earlier */
+    }
+
+    #bottom{
+      background:url('../Window_files/bottom.png') repeat-x;
+      width:186px;
+      height:12px;
+	  opacity:0.3;
+	  filter:alpha(opacity=30); /* For IE8 and earlier */
+    }
+
+    #resize{
+      background:url('../Window_files/resize.png');
+      width:22px;
+      height:12px;
+      cursor:se-resize;
+	  opacity:0.3;
+	  filter:alpha(opacity=30); /* For IE8 and earlier */
+    }

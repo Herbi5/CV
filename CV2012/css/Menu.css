@@ -1,0 +1,125 @@
+	/*
+	General rules
+	*/
+
+	html{
+		height:100%;
+		width:100%;
+	}
+
+	body{
+		font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+		font-size:0.8em;
+		margin:0px;
+		padding:0px;
+		background-color:#000000;
+		height:100%;
+		width:100%;
+		text-align:center;
+	}
+	
+	.clear{
+		clear:both;
+	}
+	
+	::selection {
+	background: transparent; /* Safari */
+	}
+	
+	::-moz-selection {
+	background: transparent; /* Firefox */
+	} 
+
+	#mainContainer{
+		text-align:left;
+		margin:0px;
+
+		border-left:1px solid #000;
+		border-right:1px solid #000;
+		width:100%;
+		height:100%;
+	}
+
+	#topBar{
+		width:90%;
+		height:100px;
+	}
+
+	#leftMenu{
+		width:80%;
+		padding-left:10px;
+		padding-right:10px;
+		float:left;
+	}
+
+	#mainContent{
+		width: 80%;
+		padding-right:10px;
+		float:left;
+	}	
+
+		/*
+	General rules
+	*/
+	/* 	Layout CSS */
+	#dhtmlgoodies_slidedown_menu{
+
+		visibility:hidden;
+		border:1px solid #000;
+		padding:5px 5px 15px 5px;
+		background-color: #8899AA;
+		width: 200px;	/* IE 5.x */
+		width/* */:/**/200px;	/* Other browsers */
+		width: /**/200px;
+
+	}
+
+	/* All A tags - i.e menu items. */
+	#dhtmlgoodies_slidedown_menu a{
+		color: #000;
+		text-decoration:none;
+		display:block;
+		clear:both;
+
+		padding-left:2px;
+
+		width: 200px;	/* IE 5.x */
+		width/* */:/**/190px;	/* Other browsers */
+		width: /**/190px;
+
+	}
+
+
+	
+P.TextParagraph {
+	MARGIN: 0cm 0cm 0pt; FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 12pt; text-align:left;
+}
+
+span.TextSpan {
+	font-size:10.0pt; font-family:"Arial","sans-serif"; color:#EEECE1;
+}
+
+span.SelectListSpan {
+	font-size:10.0pt; font-family:"Arial","sans-serif"; color:#EEECE1;
+}
+select.SelectList {
+    	Border:1px solid #AAA;
+    	color: #EEEEEE; 
+    	background: #222222;
+ 
+}
+
+table.SelectTable{
+	left:5px;
+	border-style:dotted;
+ 	border-width:1px;
+    	color: #333333; 
+
+}
+
+td.SelectCell{
+	border-style:dotted;
+ 	border-width:0px;
+    	color: #555555;
+	text-align:right;
+}

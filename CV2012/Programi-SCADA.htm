@@ -1,0 +1,339 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+
+  
+  <meta name="Generator" content="Microsoft Word 12 (filtered)"><title>Računalniški program za merjenje Poissonovega modula in relaksacije</title>
+  
+
+  
+  
+  <link rel="stylesheet" href="css/Main.css"></head><body style="background-image: url(Main_files/back5.jpg);" lang="SL">
+<div class="MainSection">
+<p class="MainParagraph"><span id="MainTitle">SCADA aplikacije<br>
+</span></p>
+<hr align="center" size="3" width="100%">
+<div class="TableDiv" id="Table2_3_2010_JULON">
+<p class="TitleParagraph"><b><span class="TitleTable">Centralno zbiranje
+podatkov na predilni liniji F in G (BARMAG)</span></b></p>
+<table class="MainTable">
+  <tbody>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">CILJNI
+UPORABNIK:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Julon
+d.d., Aquafil S.p.A.</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">OPIS:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Sistem
+centralnega zbiranja podatkov
+omogoča spremljanja in arhiviranja parametrov predilne linije BARMAG
+(linija F
+in G). Zasnovana je na SCADA sistemu proizvajala LTG in strežnik OPC
+(NT9100)
+proizvajalca Johnson Controls. Za potrebe zajemanja podatkov, je bil
+izdelan namenski
+program napisan v programskem jeziku Visual Basic, ki podatke črpa iz
+baze
+nadzornega sistema predilnice BARMAG in jih posreduje na strežniški
+program
+NT9100 s pomočjo DDE komunikacije. Centralno baza podatkov DigiDB je
+povezana s
+strežniškim programom NT9100 in iz njega črpa vrednosti izmerjenih
+parametrov,
+ki jih zapisuje v lastno bazo podatkov. Srce nadzornega sistem je
+program DigiVent,
+ki omogoča uporabniku vizualizacijo delovanja in spremljanje parametrov
+delovanja predilne linije. Glavni namen aplikacije je zbrati podatke iz
+vseh
+sistemov predilne linije F in G na enem mestu in omogočiti hitro
+pregledovanje
+in primerjavo podatkov s pomočjo preddefiniranih diagramov, česar
+obstoječi nadzorni
+sistem Barmag ne omogoča.</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">PROG.
+DATOTEKA:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><i><span class="DescriptionSpan">LineF&amp;G.dxp,
+LineScanFG.exe<br>
+      </span></i></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">STROJNA
+OPREMA:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Predilnica
+BARMAG (linija F/G) </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">PROGRAMSKI
+MODULI:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">ODBC,
+OPC, DDE, BAZE podatkov<br>
+      </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">SCADA:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">DigiDB,
+DigiVent, NT9100</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">OPERACIJSKI
+SISTEM:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Windows<br>
+      </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">LETO
+IZDELAVE:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">2010</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn"><br>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><img class="Image" src="Image_files/SCADA/SCADA%20Barmag%20sl1.jpg" height="300" width="400">,<img class="Image" src="Image_files/SCADA/SCADA%20Barmag%20sl2.jpg" height="300" width="400"><img class="Image" src="Image_files/SCADA/SCADA%20Barmag%20sl3.jpg" height="300" width="400"><img class="Image" src="Image_files/SCADA/SCADA%20Barmag%20sl4.jpg" height="300" width="400"></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<br>
+<br>
+</div>
+<div class="TableDiv" id="Table1_3_2010_JULON">
+<p class="TitleParagraph"><b><span class="TitleTable">Centralno
+zbiranje podatkov iz energetskih naprav</span></b></p>
+<table class="MainTable">
+  <tbody>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">CILJNI
+UPORABNIK:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Julon
+d.d., Aquafil S.p.A.</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">OPIS:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Sistem
+centralnega zbiranja podatkov je izdelan z namenom spremljanja in
+arhiviranja parametrov obratovanja ključnih energetskih naprav (klime,
+kompresorji, priprava vode, toplovodni sistem, ipd.) in jih združiti na
+enem
+mestu. Sistem na eni strani omogoča arhiviranje zgodovine parametrov
+obratovanja različnih naprav v skupni bazi podatkov in na drugi strani
+vpogled na
+daljavo v trenutno obratovanje in nadzor energetskih naprav s strani
+končnih
+uporabnikom v predilnicah kot tudi energetiki. Kot najprimernejša
+komunikacija
+za izmenjavo podatkov je bila izbrana OPC specifikacija, saj je
+implementirana
+že v večini obstoječih SCADA sistemih oz. strežnikih podatkov, ki
+zajemajo
+direktno iz naprav. OPC velja v tem trenutku, kot eden izmed ključnih
+standardov za medsebojno povezovanje, izmenjavo in zajemanje podatkov
+ter
+alarmiranje med različnimi napravami. Namenjena je spajanju programov
+višjega
+nivoja (SCADA) in programov (ali strojne opreme), ki se nahajajo na
+nižjih
+nivojih – upravljanje procesiranja. Strežnik OPC (NT9100) tako črpa
+podatke iz
+oddaljenih sistemov za upravljanje (kot so PLC) naprav in jih po
+potrebi
+posreduje programski opremi (kot je SCADA, HMI in ostali programi) prek
+vmesnikov. V središče izmenjave podatkov je tako postavljena OPC
+server/client
+aplikacija NT9100, na katero so preko OPC specifikacije povezani
+posamezni
+sistemi, računalniki in naprave, ki posredujejo podatke v centralno
+bazo DigiDB.
+Kot srce nadzornega sistem služi program DigiVent, ki je namenska SCADA
+proizvajalca LTG. Prednost izbrane SCADAe je, da omogoča preprosto in
+hitro
+izdelavo nadzornih mask, aplikacija ni robustna in ne zahteva
+zmogljivega računalnika,
+omogoča hkratno povezavo večjega števila nadzornih računalnikov, ima
+preprost
+sistem arhiviranja podatkov, in hkrati licenčno ni vezana na število
+uporabnikov, kakor tudi ne na količino prenesenih podatkov (št.
+byte-ov). Za realizacijo sistema centralnega zbiranja podatkov iz
+energetskih naprav, je bilo potrebno za vsako napravo ugotoviti in
+zagotoviti način komuniciranja z OPC strežnikom, določiti ciljne
+parametre spremljana, izdelati navzkrižne tabele za izmenjavo podatkov
+med napravami in centralnim računalnikom, in izdelane nadzorne maske,
+ki omogočajo uporabniku hitro in nazorno spremljanje parametrov
+delovanja naprave.</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">PROG.
+DATOTEKA:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><i><span class="DescriptionSpan">Energetics
+NT9100.dxp</span></i></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">STROJNA
+OPREMA:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">PLC
+klime linije A, 2.02 (Metronik/Honeywell)<br>
+PLC klime za linije D (Ltg/SAIA Burgess)<br>
+PLC klime za linije B,C,Aqualon BCF, Textil 1, in Textil 2
+(Kranz/Johnson Controls)<br>
+Klima F,G (Aeris/Movicon)<br>
+Kompresorska postaja (INEA/FactoryLink)<br>
+Nizkotlačni kompresor (KTurbo)<br>
+Meritve odpadnih vod (Strix/RSLinx)<br>
+Priprava vode (Strix/RSLinx)<br>
+Merilnik pretoka pare (EndressHauser/Ecograph T RSG30)<br>
+Merilnik temperature vlage v skladišču (Comet/T3510)<br>
+Regulacija vročevoda klim (Shimko/JCR-33A)</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">PROGRAMSKI
+MODULI:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">RS232/485
+komunikacija, OPC, DDE, Modbus RTU, Modbus TCP/IP<br>
+      </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">SCADA:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">DigiDB,
+DigiVent, NT9100</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">OPERACIJSKI
+SISTEM:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Windows<br>
+      </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">LETO
+IZDELAVE:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">2008-10</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn"><br>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><img class="Image" src="Image_files/SCADA/SCADA%20Energetika.jpg" height="300" width="400"><br>
+      <br>
+	</p><embed src="Image_files/SCADA/SCADA%20Energetika.swf" style="padding: 10px;" height="386" width="512"> 
+	<p></p>
+      <br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<br>
+<br>
+</div>
+</div>
+
+</body></html>

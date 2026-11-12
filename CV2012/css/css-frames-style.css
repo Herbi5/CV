@@ -1,0 +1,64 @@
+/***************STRUCTURE***************************/
+/*Reset*/
+* {
+margin:0;
+padding:0;
+}
+
+html {
+	overflow:hidden;
+}
+
+body {
+	min-width:640px;
+}
+/* Absolute positioned header for all browsers*/
+#header-wrapper {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0px;
+	height:60px;
+}
+/* Reset header position to fixed for real browsers such as Firefox*/
+body>#header-wrapper {
+	position:fixed;
+}
+
+#content-wrapper {
+	position:absolute;
+	top:60px;
+	left:250px;
+	right:0px;
+	bottom:0px;
+}
+
+body>#content-wrapper {
+	margin-left:0;
+}
+
+#menu-wrapper {
+	position:absolute;
+	top:60px;
+	left:0em;
+	bottom:0px;
+	width:250px;
+}
+
+body>#menu-wrapper {
+	position:fixed;
+}
+
+
+
+
+/***************STYLE***************************/
+body,
+html{
+	font-family:"Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif;
+	color:#ffffff;font-family:"Trebuchet MS", Georgia, Verdana, Arial, Helvetica, sans-serif;
+	background:#000000;
+}
+
+
+	

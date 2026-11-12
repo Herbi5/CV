@@ -1,0 +1,116 @@
+/* Parent container for the entire gallery */
+.dg-image-gallery{
+	position:absolute;
+	width:97%;
+	height:95%;
+	border:3px solid #AAA;
+	padding:2px 2px 2px 2px;
+}
+
+/* Enlarged image */
+.dg-image-gallery-enlarged-image {
+	position : absolute;
+	left: 0px;
+	top:50px;
+	background-position : center center;
+	width : 100%;
+	height: 450px;
+
+}
+/* Caption below large image */
+.dg-image-gallery-caption {
+	position:absolute;
+	bottom:120px;
+	height:30px;
+	width:100%;
+	text-align:center;
+	color: #CCC;
+}
+/* Container for all thumbnails */
+.dg-image-gallery-thumbnail-container {
+	position : absolute;
+	top : 5px;
+	right : 20px;
+	left: 20px;
+	padding-bottom:10px;
+	right:20px
+	/* height:???; - is set by the script based on property thumb height */
+}
+/* Thumbnails inside thumbnail strip */
+.dg-image-gallery-thumbnail{
+	width: 80px;
+	height: 80px;
+	padding-right:2px;
+	padding-left:2px;
+}
+
+/* Highlight element */
+.dg-image-gallery-thumbnail-highlight{
+	border:3px solid #CCC;
+	padding:2px;
+}
+
+/* Previous and next buttons */
+
+.dg-image-gallery-previous, .dg-image-gallery-next {
+	background-position : center center;
+	cursor: pointer;
+	width:20px;
+	height:120px;
+	bottom:10px;
+	position: absolute;
+	cursor: pointer;
+}
+.dg-image-gallery-previous{
+	background-image:url('../ImageGallery_files/left.png');
+	left : 0px;
+}
+.dg-image-gallery-previous-over{
+	background-image:url('../ImageGallery_files/left-over.png');
+}
+.dg-image-gallery-next{
+	background-image:url('../ImageGallery_files/right.png');
+	right : 0px;
+}
+.dg-image-gallery-next-over{
+	background-image:url('../ImageGallery_files/right-over.png');
+}
+
+/** Autoplay buttons */
+.dg-image-gallery-next-autoplay-container{
+	position:absolute;
+	right:0px;
+	top:450px;
+	z-index:20000;
+	width:60px;
+}
+.dg-image-gallery-next-autoplay-start, .dg-image-gallery-next-autoplay-stop{
+	position:absolute;
+	top:0px;
+	color:#CCC;
+	padding:5px;
+	height:20px;
+	width:30px;
+
+	text-align:right;
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+.dg-image-gallery-next-autoplay-start{
+	left:0px;
+	background-image:url('../ImageGallery_files/play.png');
+}
+.dg-image-gallery-next-autoplay-stop{
+	left:30px;
+	background-image:url('../ImageGallery_files/pause.png');
+}
+.dg-image-gallery-next-autoplay-start-off{
+	background-image:url('../ImageGallery_files/play-off.png');
+	cursor: default;
+
+}
+.dg-image-gallery-next-autoplay-stop-off{
+	background-image:url('../ImageGallery_files/pause-off.png');
+	cursor: default;
+
+}
