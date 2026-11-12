@@ -1,0 +1,69 @@
+html {
+	height: 100%;
+}
+body {
+	margin: 0px; padding: 0px; height: 100%; text-align: center; font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif; font-size: 0.8em; background-color: rgb(226, 235, 237);
+}
+.clear {
+	clear: both;
+}
+#mainContainer {
+	margin: 0px auto; width: 760px; height: 100%; text-align: left; border-right-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; background-color: rgb(255, 255, 255);
+}
+#topBar {
+	width: 760px; height: 100px;
+}
+#leftMenu {
+	width: 200px; padding-right: 10px; padding-left: 10px; float: left;
+}
+#mainContent {
+	width: 520px; padding-right: 10px; float: left;
+}
+#dhtmlgoodies_slidedown_menu .dhtmlgoodies_activeItem {
+	color: green; font-weight: bold;
+}
+#dhtmlgoodies_slidedown_menu li {
+	list-style-type: none; position: relative;
+}
+#dhtmlgoodies_slidedown_menu ul {
+	margin: 0px; padding: 0px; position: relative;
+}
+#dhtmlgoodies_slidedown_menu div {
+	margin: 0px; padding: 0px;
+}
+#dhtmlgoodies_slidedown_menu {
+	width: 205px;
+}
+#dhtmlgoodies_slidedown_menu a {
+	width: 170px; color: rgb(0, 0, 0); padding-left: 2px; clear: both; text-decoration: none; display: block;
+}
+#dhtmlgoodies_slidedown_menu .dhtmlgoodies_activeItem {
+	color: green; font-weight: bold;
+}
+#dhtmlgoodies_slidedown_menu .slMenuItem_depth1 {
+	font-weight: bold; margin-top: 1px; border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#dhtmlgoodies_slidedown_menu .slMenuItem_depth2 {
+	margin-top: 1px;
+}
+#dhtmlgoodies_slidedown_menu .slMenuItem_depth3 {
+	color: blue; font-style: italic; margin-top: 1px;
+}
+#dhtmlgoodies_slidedown_menu .slMenuItem_depth4 {
+	color: red; margin-top: 1px;
+}
+#dhtmlgoodies_slidedown_menu .slMenuItem_depth5 {
+	margin-top: 1px;
+}
+#dhtmlgoodies_slidedown_menu .slideMenuDiv1 ul {
+	padding: 1px;
+}
+#dhtmlgoodies_slidedown_menu .slideMenuDiv2 ul {
+	padding: 1px; margin-left: 5px;
+}
+#dhtmlgoodies_slidedown_menu .slideMenuDiv3 ul {
+	padding: 1px; margin-left: 10px;
+}
+#dhtmlgoodies_slidedown_menu .slMenuItem_depth4 ul {
+	padding: 1px; margin-left: 15px;
+}
