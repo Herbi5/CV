@@ -1,0 +1,565 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Generator" content="Microsoft Word 12 (filtered)"><title>Computer programs for device monitoring and control</title>
+
+<link rel="stylesheet" href="css/Main.css"></head>
+<!--body style="background-image: url(Main_files/back5.jpg);" lang="SL"-->
+</head><body style="background-image: url(Image_files/Under%20construction/Under%20Construction.jpg);" lang="SL">
+
+<p style="text-align: center;" class="MainParagraph"><img class="Image" src="Image_files/Under%20construction/Web%20Under%20Construction.jpg"></p>
+
+<div class="MainSection">
+<p class="MainParagraph"><span id="MainTitle">Software - Machine control and Production Monitoring<br>
+ </span></p>
+<hr align="center" size="3" width="100%">
+<div class="TableDiv" id="Table5_3_2011_JULON">
+<p class="TitleParagraph"><b><span class="TitleTable">Program for monitoring supervisory system (SCADA) data and alarming via SMS/EMAIL messages</span></b></p>
+<table class="MainTable">
+<tbody>
+<tr>
+<td class="NullColumn"><br>
+</td>
+<td class="HeaderColumn">
+<p class="HeaderParagraph"><b><span class="HeaderSpan">TARGET USER:</span></b></p>
+</td>
+<td class="DescriptionColumn">
+<p class="DesriptionParagraph"><span class="DescriptionSpan">Julon
+d.d., Aquafil S.p.A.</span></p>
+</td>
+</tr>
+<tr>
+<td class="NullColumn"><br>
+</td>
+<td class="HeaderColumn">
+<p class="HeaderParagraph"><b><span class="HeaderSpan">DESCRIPTION:</span></b></p>
+</td>
+<td class="DescriptionColumn">
+<p class="DesriptionParagraph"><span class="DescriptionSpan">The programs are intended to notify (alarm) users about critical events via e-mail and/or SMS messages. Three different programs with a similar graphical interface and principle of operation forward, in real time, information on events registered by the Tracer Summit SCADA system from TRANE, the Super-Flash supervisory system and the RSView32 SCADA supervisory system from Rockwell Automation. The essential difference between the individual versions of the program is that each is built specifically for monitoring one type of SCADA system, since the sets of parameters as well as the databases differ from one another. The heart of the e-mail sending is therefore the Email/SMS server program, which monitors the data (parameters, trends) and events (alarms / system messages) of the individual central supervisory system. The Email/SMS server connects to the local database and the events database (ALARMS) that SCADA stores in real time on the local computer and, based on the information obtained, produces three types of messages: an event message (SCADA alarms), a message about exceeded parameter limits, and a system message intended for verifying communication to the users. The program then forwards the messages to the Ozeki SMS server in the case of short messages and/or to an SMTP Email server in the case of e-mail messages. Both SMS and Email messages are sent to all users who are defined as recipients in the configuration file. In addition to the events already defined by the supervisory system, the program allows defining custom parameter limits, which are distributed when the limit values are exceeded.</span></p>
+</td>
+</tr>
+<tr>
+<td class="NullColumn"><br>
+</td>
+<td class="HeaderColumn">
+<p class="HeaderParagraph"><b><span class="HeaderSpan">PROGRAM FILE:</span></b></p>
+</td>
+<td class="DescriptionColumn">
+<p class="DesriptionParagraph"><i><span class="DescriptionSpan">TracerSMSAlarm.exe,
+RockwellSMSAlarm.exe, SFAlarm.exe</span></i></p>
+</td>
+</tr>
+<tr>
+<td class="NullColumn"><br>
+</td>
+<td class="HeaderColumn">
+<p class="HeaderParagraph"><b><span class="HeaderSpan">HARDWARE:</span></b></p>
+</td>
+<td class="DescriptionColumn">
+<p class="DesriptionParagraph"><span class="DescriptionSpan">PC x86 computer</span></p>
+</td>
+</tr>
+<tr>
+<td class="NullColumn"><br>
+</td>
+<td class="HeaderColumn">
+<p class="HeaderParagraph"><b><span class="HeaderSpan">SOFTWARE MODULES:</span></b></p>
+</td>
+<td class="DescriptionColumn">
+<p class="DesriptionParagraph"><span class="DescriptionSpan">Communication with databases - ODBC, sending e-mail, sending SMS<br>
+</span></p>
+</td>
+</tr>
+<tr>
+<td class="NullColumn"><br>
+</td>
+<td class="HeaderColumn">
+<p class="HeaderParagraph"><b><span class="HeaderSpan">PROGRAMMING LANGUAGE:</span></b></p>
+</td>
+<td class="DescriptionColumn">
+<p class="DesriptionParagraph"><span class="DescriptionSpan">Visual
+Basic 6.0</span></p>
+</td>
+</tr>
+<tr>
+<td class="NullColumn"><br>
+</td>
+<td class="HeaderColumn">
+<p class="HeaderParagraph"><b><span class="HeaderSpan">OPERATING SYSTEM:</span></b></p>
+</td>
+<td class="DescriptionColumn">
+<p class="DesriptionParagraph"><span class="DescriptionSpan">Windows
+3.x, 95/98/NT</span></p>
+</td>
+</tr>
+<tr>
+<td class="NullColumn"><br>
+</td>
+<td class="HeaderColumn">
+<p class="HeaderParagraph"><b><span class="HeaderSpan">YEAR:</span></b></p>
+</td>
+<td class="DescriptionColumn">
+<p class="DesriptionParagraph"><span class="DescriptionSpan">2011</span></p>
+</td>
+</tr>
+<tr>
+<td class="NullColumn"><br>
+</td>
+<td class="HeaderColumn"><br>
+</td>
+<td class="DescriptionColumn">
+<p class="DesriptionParagraph"><img class="Image" src="Image_files/Programi/Tracer%20Summit%20SMS%20Server.jpg"><img class="Image" src="Image_files/Programi/RSView%20SMS%20Server.jpg"><img class="Image" src="Image_files/Programi/Super-Flash%20SMS%20Server.jpg"></p>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<br>
+<br>
+<br>
+</div>
+<div class="TableDiv" id="Table4_3_2010_JULON">
+<p class="MainParagraph"><b><span class="TitleTable">Program for remote monitoring of the BARMAG spinning plant
+</span></b></p>
+<table class="MainTable">
+  <tbody>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">TARGET USER:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Julon
+d.d., Aquafil S.p.A.</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">DESCRIPTION:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">The existing software for monitoring the BARMAG spinning line, which was supplied together with the hardware, is a typical SCADA whose primary purpose is monitoring and setting the parameters of the production process. A significant shortcoming of this program, apparent from the very first use, is that it provides no insight into the current utilization of the production line through a simple graphical display, on the basis of which the operator could quickly identify critical points and problems in the production process at any moment. The program only allows numerical data to be browsed by position, which is rather time-consuming for forming a true picture of what is happening on the production line and requires an operator well trained in data analysis and interpretation. To simplify and automate the data analysis procedures, the RPM program was developed. It is designed to connect in real time to the database on the central supervisory computer of the production process and to periodically collect data on breaks, stoppages, number of bobbins produced, winding time and product type for each position. The data obtained are used to calculate and evaluate the utilization of the production line by work shifts and time periods. The utilization of each position is plotted in real time as a line diagram, which allows the operator to quickly identify faults. Interruptions in the line diagram represent stoppages in the production process, while each individual doff is marked with a small dash. Numerical values are also printed for each position for easier and faster quantification of position efficiency. The RPM program allows simultaneous collection of data from several supervisory computers, each of which monitors individual subsystems that are part of a larger production line, and combines the data in a common database and a common display on the screen. Data can be plotted by systems, products or groups, as defined by the operator. </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">PROGRAM FILE:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><i><span class="DescriptionSpan">RPM.exe</span></i></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">HARDWARE:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">BARMAG spinning plant</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">SOFTWARE MODULES:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Graphical plotting, acquisition and analysis of data, storing data in a local database<br>
+      </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">PROGRAMMING LANGUAGE:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">LabView
+6.0i<br>
+      </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">OPERATING SYSTEM:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Windows
+3.x, 95/98/NT</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">YEAR:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">2005-2010</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn"><br>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><img class="Image" src="Image_files/Programi/RPM.jpg" height="300" width="400"></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<br>
+<br>
+</div>
+<div class="TableDiv" id="Table3_2_2006_JULON">
+<p class="MainParagraph"><b><span class="TitleTable">Program for remote monitoring of the climatic conditions of spinning plant C</span></b></p>
+<table class="MainTable">
+  <tbody>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">TARGET USER:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Julon
+d.d., Aquafil S.p.A.</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">DESCRIPTION:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Monitoring the state of the climate in the spinning cabinets is of utmost importance for the final quality of the filament. The production process is organized so that the climate parameters are monitored and controlled by the energy technician on duty (HVAC technician) from a remote computer in the energy facility, which runs the dedicated Krantz climate control program. This program stores the history of the measured parameters locally on disk, which also allows the parameters to be reviewed later in the event of major deviations. Due to poor and delayed communication between the energy technician on duty and the process technologist on the spinning line, deviations of the climate parameters are reported late and action (segregation of material) is taken late, which increases the likelihood of customer complaints. To give the technologist on the spinning line an immediate view of the climatic conditions by system, a program was developed that enables monitoring and plotting of diagrams of all key climate operating parameters (temperature, humidity and pressure). The program connects in real time to the remote computer in the energy facility and periodically acquires the measured values. Based on the limit values defined for each system, the program automatically and instantly alerts the operator in the event of a deviation.</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">PROGRAM FILE:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Aircondition
+- C.exe</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">HARDWARE:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Krantz air handling unit (Line C)</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">SOFTWARE MODULES:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Graphical plotting, acquisition and analysis of data, storing alarms in a local database and alarming</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">PROGRAMMING LANGUAGE:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">LabView
+6.0i<br>
+      </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">OPERATING SYSTEM:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Windows
+3.x, 95/98/NT</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">YEAR:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">2006</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn"><br>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><img class="Image" src="Image_files/Programi/Klima%20C.jpg" height="300" width="400"></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<br>
+<br>
+</div>
+<div class="TableDiv" id="Table2_2_2004_JULON">
+<p class="MainParagraph"><b><span class="TitleTable">Program for central data collection of the spinning and winding sections of line C</span></b></p>
+<table class="MainTable">
+  <tbody>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">TARGET USER:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Julon
+d.d., Aquafil S.p.A.</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">DESCRIPTION:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Spinning line C has two mutually separate and completely incompatible supervisory systems. The first, supplied by the manufacturer Toray, is used for monitoring and setting the drive section (godet drives, winder, etc.) of the production line. The second, developed at Aquafil and based on the SuperFlash SCADA program, is used for monitoring and controlling the spinning section (extruder temperatures and pressures, spinning beam, etc.). Both systems record and archive data in their own format. As a rule, the data are available only for a limited period (one month) and therefore do not allow looking back over a longer period. Because of the different record formats, it is also not possible to simultaneously compare and correlate parameters of the spinning section with those of the winding section. To preserve the parameters for a longer period, the diagrams are printed once a month (applies to the spinning section only) and stored in paper form. Thus, for the past period there is no digital record of the running (operation) of the spinning line. For this purpose the LineScan program was developed for simultaneous monitoring and recording of data from both of the above supervisory systems in a common database, which can be accessed quickly and which allows subsequent numerical processing and correlation of the signals.
+      </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">PROGRAM FILE:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">LineScan.exe</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">HARDWARE:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Krantz air handling unit (Line C)</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">SOFTWARE MODULES</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Data acquisition from MAINSMU and SuperFlash SCADA, storing data in a local database<br>
+      </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">PROGRAMMING LANGUAGE:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Visual
+Basic 6.0
+      </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">OPERATING SYSTEM:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">Windows
+3.x, 95/98/NT</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn">
+      <p class="HeaderParagraph"><b><span class="HeaderSpan">YEAR:</span></b></p>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><span class="DescriptionSpan">2003
+- 04</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="NullColumn"><br>
+      </td>
+      <td class="HeaderColumn"><br>
+      </td>
+      <td class="DescriptionColumn">
+      <p class="DesriptionParagraph"><img class="Image" src="Image_files/Programi/Line%20Scan%20-%20C.jpg"></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<br>
+<br>
+</div>
+<div class="TableDiv" id="Table1_3_2000_CEM">
+<p class="TitleParagraph"><b><span class="TitleTable">Computer application for controlling operation of custom uniaxial tensile testing apparatus</span></b></p>
+
+<table class="MainTable">
+ <tbody><tr>
+  <td class="NullColumn"><br>
+</td>
+  <td class="HeaderColumn">
+  <p class="HeaderParagraph"><b><span class="HeaderSpan">TARGERT USER:</span></b></p>
+  </td>
+
+  <td class="DescriptionColumn">
+  <p class="DesriptionParagraph"><span class="DescriptionSpan">Center for Experimental Mechanics(CEM) - Master thesis</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td class="NullColumn"><br>
+</td>
+  <td class="HeaderColumn">
+  <p class="HeaderParagraph"><b><span class="HeaderSpan">DESCRIPTION:</span></b></p>
+
+  </td>
+  <td class="DescriptionColumn">
+  <p class="DesriptionParagraph"><span class="DescriptionSpan">The computer application is designed to control the operation
+  of custom built apparatus for uniaxial tensile testing of polymer samples in
+  controlled environment.&nbsp; It directly controls devices such as servomotor
+  controller, thermostatic circulator over serial communication port
+  RS232/RS485 and performs online measurements by utilizing data acquisition
+  system acquiring measured data through HP-IB communication port. Data
+  acquisition could be performed in linear or logarithmic timescale. Acquired
+  data on temperature, uniaxial load, longitudinal extension and transverse
+  contraction is used to calculate time-dependent tensile relaxation modulus
+  and Poisson's ratio. Measured and calculated data is plotted on the screen
+  and written into data files for further analyses.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td class="NullColumn"><br>
+
+</td>
+  <td class="HeaderColumn">
+  <p class="HeaderParagraph"><b><span class="HeaderSpan">EXECUTABLE:</span></b></p>
+  </td>
+  <td class="DescriptionColumn">
+  <p class="DesriptionParagraph"><i><span class="DescriptionSpan">Mc.exe</span></i></p>
+  </td>
+ </tr>
+
+ <tr>
+  <td class="NullColumn"><br>
+</td>
+  <td class="HeaderColumn">
+  <p class="HeaderParagraph"><b><span class="HeaderSpan">HARDWARE:</span></b></p>
+  </td>
+  <td class="DescriptionColumn">
+  <p class="DesriptionParagraph"><span class="DescriptionSpan">HAAKE F6-C40 Circulator<br>
+
+  Servo controller Unidrive UNI 1405, Servomotor 95DSD300H, Resolver UD 53, Module UD 70<br>
+  Data Acquisition HP 3852<br>
+  HP-IB (GP-IB) communication interface HP82335 HP-IB<br>
+  PC Pentium II</span></p>
+  </td>
+ </tr>
+ <tr>
+
+  <td class="NullColumn"><br>
+</td>
+  <td class="HeaderColumn">
+  <p class="HeaderParagraph"><b><span class="HeaderSpan">SOFTWARE MODULES:</span></b></p>
+  </td>
+  <td class="DescriptionColumn">
+  <p class="DesriptionParagraph"><span class="DescriptionSpan">Chart and graphic module, sound module, communication module,
+  data processing and acquisition module,&nbsp; computer vision (imaging) module, </span></p>
+
+  </td>
+ </tr>
+ <tr>
+  <td class="NullColumn"><br>
+</td>
+  <td class="HeaderColumn">
+  <p class="HeaderParagraph"><b><span class="HeaderSpan">PROGRAMMING LANGUAGE:</span></b></p>
+  </td>
+  <td class="DescriptionColumn">
+
+  <p class="DesriptionParagraph"><span class="DescriptionSpan">Software Development Kit (SDK – Visual Studio)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td class="NullColumn"><br>
+</td>
+  <td class="HeaderColumn">
+  <p class="HeaderParagraph"><b><span class="HeaderSpan">OPERATING SYSTEM:</span></b></p>
+
+  </td>
+  <td class="DescriptionColumn">
+  <p class="DesriptionParagraph"><span class="DescriptionSpan">Windows 3.x, 95/98/NT</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td class="NullColumn"><br>
+</td>
+  <td class="HeaderColumn">
+
+  <p class="HeaderParagraph"><b><span class="HeaderSpan">YEAR:</span></b></p>
+  </td>
+  <td class="DescriptionColumn">
+  <p class="DesriptionParagraph"><span class="DescriptionSpan">1997-2000</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td class="NullColumn"><br>
+
+</td>
+  <td class="HeaderColumn"><br>
+</td>
+  <td class="DescriptionColumn">
+  <p class="DesriptionParagraph"><img class="Image" src="Image_files/Programi/Mc.jpg" height="312" width="424"></p>
+  </td>
+ </tr>
+</tbody></table>
+</div>
+</div>
+</body></html>
